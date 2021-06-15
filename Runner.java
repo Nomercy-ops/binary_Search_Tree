@@ -22,7 +22,8 @@ public class Runner {
         binarysearchtree.insert(65);
         binarysearchtree.insert(63);
         binarysearchtree.insert(67);
-        System.out.println("The size of binary tree is : " + binarysearchtree.size());   
+        System.out.println("The size of binary tree is : " + binarysearchtree.size());
+        System.out.println(binarysearchtree.SearchNode(binarysearchtree.root, 65));     
        
     }
 }

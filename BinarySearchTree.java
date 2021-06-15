@@ -41,8 +41,8 @@ public class BinarySearchTree {
         return root;
 
     }
-	
-	/**
+
+    /**
      * UC2: Java function to return number of nodes from this binary search
      * tree.
      *
@@ -59,6 +59,38 @@ public class BinarySearchTree {
         } else {
             return (size(node.left) + 1 + size(node.right));
         }
+    }
+
+    /**
+     * UC:3 These method is used to search the node starting from root and 
+     * then start comparing values with root.
+     * if value is greater than root then it will start searching from right child
+     * is a value is less than root then it will start searching from left child.
+     *
+     * @param node
+     * @param data
+     * @return true or false
+     */
+   
+    boolean SearchNode(Node node, int data) {
+        boolean isPresent = false;
+        // check whether root is null.
+        if (node == null) {
+            return false;
+        }
+        while (node != null) {
+            if (data < node.getData()) {
+                node = node.getLeft();
+            } else if (data > node.getData()) {
+                node = node.getRight();
+            } else {
+                isPresent = true;
+                break;
+            }
+        }
+
+        return isPresent;
+
     }
 
 }
