@@ -11,7 +11,18 @@ public class Runner {
         BinarySearchTree binarysearchtree = new BinarySearchTree();
         binarysearchtree.insert(56);
         binarysearchtree.insert(30);
-        binarysearchtree.insert(70);     
+        binarysearchtree.insert(70);
+        binarysearchtree.insert(22);
+        binarysearchtree.insert(40);
+        binarysearchtree.insert(11);
+        binarysearchtree.insert(3);
+        binarysearchtree.insert(16);
+        binarysearchtree.insert(60);
+        binarysearchtree.insert(95);
+        binarysearchtree.insert(65);
+        binarysearchtree.insert(63);
+        binarysearchtree.insert(67);
+        System.out.println("The size of binary tree is : " + binarysearchtree.size());   
        
     }
 }
